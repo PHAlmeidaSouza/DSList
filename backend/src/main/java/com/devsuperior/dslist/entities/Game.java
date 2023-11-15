@@ -2,11 +2,16 @@ package com.devsuperior.dslist.entities;
 
 import jakarta.persistence.*;
 
+import java.io.Serial;
+import java.io.Serializable;
 import java.util.Objects;
 
 @Entity
 @Table(name = "tb_game")
-public class Game {
+public class Game implements Serializable {
+
+    @Serial
+    private static final long serialVersionUID = 1L;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
