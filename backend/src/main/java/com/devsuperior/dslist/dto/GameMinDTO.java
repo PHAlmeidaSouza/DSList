@@ -3,8 +3,6 @@ package com.devsuperior.dslist.dto;
 import com.devsuperior.dslist.entities.Game;
 import com.devsuperior.dslist.projections.GameMinProjection;
 
-import java.io.Serial;
-import java.io.Serializable;
 
 public class GameMinDTO {
 

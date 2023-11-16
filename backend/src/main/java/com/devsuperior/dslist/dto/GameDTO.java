@@ -1,7 +1,6 @@
 package com.devsuperior.dslist.dto;
 
 import com.devsuperior.dslist.entities.Game;
-import jakarta.persistence.Column;
 import org.springframework.beans.BeanUtils;
 
 public class GameDTO {
@@ -16,8 +15,7 @@ public class GameDTO {
     private String shortDescription;
     private String longDescription;
 
-    public GameDTO() {
-    }
+    public GameDTO() {}
 
     public GameDTO(Game entity) {
         BeanUtils.copyProperties(entity, this);
